@@ -1,0 +1,72 @@
+
+{
+  "title": "Home/End to Control+A/E for Terminal/Notes",
+  "rules": [
+    {
+      "description": "Home key to the beginning of the line (Control + a) for Terminal/Notes",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "home",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "a",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com\\.apple\\.Terminal",
+                "com\\.apple\\.Notes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "End key to the end of the line (Control + e) for Terminal/Notes",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "end",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "e",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic",
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "com\\.apple\\.Terminal",
+                "com\\.apple\\.Notes"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+]
+}
