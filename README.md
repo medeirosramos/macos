@@ -2,7 +2,7 @@
 
 Software para MacOS https://karabiner-elements.pqrs.org/
 
-### Minha customicação para as teclas Home e End
+### Minha customicação para as teclas Home e End - Terminal/Notes
 
 link para importação: [Home/End](http://karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json)
 
