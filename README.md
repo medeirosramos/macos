@@ -11,13 +11,20 @@ link para importação: [Home/End](http://karabiner://karabiner/assets/complex_m
 abra em seu navegador o link: *karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json*
 
 ## Hist
-
 editar o arquivo /etc/zshrc de:
+
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+
 HISTSIZE=2000
+
 SAVEHIST=1000
+
 para:
+
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+
 HISTSIZE=99999
+
 SAVEHIST=$HISTSIZE
+
 alias hist="history 1"
