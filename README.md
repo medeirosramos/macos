@@ -19,7 +19,7 @@ SAVEHIST=1000
 
 para:
 
-  HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
-  HISTSIZE=99999
+  &nbsp HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+  HISTSIZE=99999 &nbsp
   SAVEHIST=$HISTSIZE 
   alias hist="history 1"
