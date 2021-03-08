@@ -14,12 +14,14 @@ abra em seu navegador o link: *karabiner://karabiner/assets/complex_modification
 editar o arquivo /etc/zshrc de:
 
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+
 HISTSIZE=2000
+
 SAVEHIST=1000
 
 para:
 
-  &nbsp HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
-  HISTSIZE=99999 &nbsp
+  HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+  HISTSIZE=99999 
   SAVEHIST=$HISTSIZE 
   alias hist="history 1"
