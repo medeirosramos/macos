@@ -23,3 +23,7 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=99999  
 SAVEHIST=$HISTSIZE  
 alias hist="history 1"  
+
+## ssh-copy-id
+
+ssh-copy-id -i .ssh/id_rsa.pub norteng@columbia.ad.norteng.com.br
