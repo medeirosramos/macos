@@ -26,4 +26,4 @@ alias hist="history 1"
 
 ## ssh-copy-id
 
-ssh-copy-id -i .ssh/id_rsa.pub norteng@columbia.ad.norteng.com.br
+ssh-copy-id -i .ssh/id_rsa.pub user@servidor.com.br
