@@ -27,3 +27,30 @@ alias hist="history 1"
 ## ssh-copy-id
 
 ssh-copy-id -i .ssh/id_rsa.pub user@servidor.com.br
+
+
+## multipass
+
+multipass launch --name Ubuntu16 16.04
+
+#Montar unidade hopedeiro
+multipass mount /Users/rodrigo/gitntg maquina:/opt/gitntg
+multipass umount maquina:/opt/gitntg
+
+#definir primary
+multipass set client.primary-name=Ubuntu20
+
+#definir virtualizador
+ sudo multipass get local.driver
+ sudo multipass set local.driver=virtualbox
+ ou
+ sudo multipass set local.driver=hyperkit
+
+#comandos diversos
+ multipass info --all
+ multipass list
+ multipass delete demo
+ multipass list
+ multipass purge
+ multipass list
+ multipass get client.primary-name
