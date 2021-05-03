@@ -31,7 +31,9 @@ ssh-copy-id -i .ssh/id_rsa.pub user@servidor.com.br
 
 ## multipass
 
-multipass launch --name Ubuntu16 16.04
+multipass launch --name ubuntu16 16.04
+Launched: ubuntu16                                                              
+Mounted '/Users/rodrigo' into 'ubuntu16:Home'  
 
 #Montar unidade hopedeiro  
 multipass mount /Users/rodrigo/gitntg maquina:/opt/gitntg  
