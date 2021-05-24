@@ -4,7 +4,7 @@
 
 Software para MacOS https://karabiner-elements.pqrs.org/
 
-### Minha customicação para as teclas Home e End nos Apps: Terminal/Notes
+Minha customicação para as teclas Home e End nos Apps: Terminal/Notes
 
 link para importação: [Home/End](http://karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json)
 
@@ -23,6 +23,7 @@ HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
 HISTSIZE=99999  
 SAVEHIST=$HISTSIZE  
 alias hist="history 1"  
+alias servidores=/Users/rodrigo/github/macos/sshServidores.sh
 
 ## ssh-copy-id
 
@@ -56,3 +57,11 @@ multipass list
 multipass purge  
 multipass list  
 multipass get client.primary-name
+
+# Gravar ISO PenDrive
+
+diskutil list
+
+diskutil unmountDisk /dev/disk3
+
+sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/disk3 bs=1m
