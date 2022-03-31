@@ -58,6 +58,10 @@ multipass purge
 multipass list  
 multipass get client.primary-name
 
+# Converter imagem .DMG em .ISO
+
+hdiutil convert origem.dmg -format UDTO -o destino.iso
+
 # Gravar ISO PenDrive
 
 diskutil list
@@ -66,6 +70,9 @@ diskutil unmountDisk /dev/disk3
 
 sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/disk3 bs=1m
 
+# HomeBrew https://brew.sh/
+
+Exemplo de uso: brew install pdftk-java
 
 # ireport MacOS
 ./Downloads/iReport-5.6.0/bin/ireport
