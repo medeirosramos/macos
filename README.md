@@ -77,5 +77,7 @@ Exemplo de uso: brew install pdftk-java
 # ireport MacOS
 ./Downloads/iReport-5.6.0/bin/ireport
 
-# code
+# DEV in MacOS (Appache/PHP/VisualStudioCode)
+https://getgrav.org/blog/macos-monterey-apache-multiple-php-versions
+
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
