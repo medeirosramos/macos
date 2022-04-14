@@ -76,3 +76,6 @@ Exemplo de uso: brew install pdftk-java
 
 # ireport MacOS
 ./Downloads/iReport-5.6.0/bin/ireport
+
+# code
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
