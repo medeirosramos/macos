@@ -24,6 +24,7 @@ HISTSIZE=99999
 SAVEHIST=$HISTSIZE  
 alias hist="history 1"  
 alias servidores=/Users/rodrigo/github/macos/sshServidores.sh
+alias ireport=/Users/rodrigo/Downloads/iReport-5.6.0/bin/ireport
 
 ## ssh-copy-id
 
