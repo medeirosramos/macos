@@ -83,3 +83,7 @@ Exemplo de uso: brew install pdftk-java
 https://getgrav.org/blog/macos-monterey-apache-multiple-php-versions
 
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+
+# Executar .exe feito em Java no MacOS
+
+"/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
