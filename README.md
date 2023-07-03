@@ -87,3 +87,9 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 # Executar .exe feito em Java no MacOS
 
 "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
+
+# SVN Client MacOS
+
+https://subversion.apache.org/packages.html#osx
+brew options subversion  
+brew install subversion  
