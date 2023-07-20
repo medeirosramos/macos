@@ -27,6 +27,10 @@ alias hist="history 1"
 alias servidores=/Users/rodrigo/github/macos/sshServidores.sh  
 alias ireport=/Users/rodrigo/Downloads/iReport-5.6.0/bin/ireport  
 
+## ssh-keygen
+commando linux:
+`ssh-keygen -t rsa -b 4096`
+
 ## ssh-copy-id
 
 ssh-copy-id -i .ssh/id_rsa.pub user@servidor.com.br
