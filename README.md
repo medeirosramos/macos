@@ -97,3 +97,18 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 https://subversion.apache.org/packages.html#osx
 brew options subversion  
 brew install subversion  
+
+# Job Log para impressora Ricoh
+https://discussions.apple.com/thread/8658692
+Terminal: 
+sudo cupsctl WebInterface=yes
+Browser:
+http://127.0.0.1:631/printers/yourprinter
+Administration -> Set Default Options -> Job Log -> Enable User Code: On
+                                                    User Code: Custom 
+                                                    User Code: xxxx
+                Button Set Default Options
+Terminal: 
+sudo cupsctl WebInterface=no
+
+Restart Print System or Reboot.
