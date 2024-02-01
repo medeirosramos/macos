@@ -115,6 +115,8 @@ Conecta na VPN (rota defult para utun4 terá prioridade)
 Remov. rota padrão ETH0: `sudo route delete default -interface en0`  
 Adici. rota padrão ETH0: `sudo route add default -interface en0`  
 
+Os comandos anteriores colocará a rota p/ ETH) como prioridade
+
 Adici. rota da rede: `sudo route add 10.1.4.0 -netmask 255.255.255.0 -interface utun4`  
 
 opcos para análise:  
