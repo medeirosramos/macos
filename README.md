@@ -109,3 +109,15 @@ User Code: xxxx
 Button Set Default Options  
 Terminal: `sudo cupsctl WebInterface=no`  
 Restart Print System or Reboot.  
+
+# GlobalProtect
+Conecta na VPN (rota defult para utun4 terá prioridade)
+Remov. rota padrão ETH0: `sudo route delete default -interface en0`
+Adici. rota padrão ETH0: `sudo route add default -interface en0`
+
+Adici. rota da rede: `sudo route add 10.1.4.0 -netmask 255.255.255.0 -interface utun4`
+
+opcos para analise: 
+`sudo route add 10.1.2.0 -netmask 255.255.255.0 -gateway 192.168.60.55`
+`sudo route add 10.1.3.0 -gateway 192.168.60.55`
+`sudo route add 10.1.4.0 -netmask 255.255.255.0  -gateway 192.168.60.55`     
