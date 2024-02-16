@@ -111,6 +111,8 @@ Terminal: `sudo cupsctl WebInterface=no`
 Restart Print System or Reboot.  
 
 # GlobalProtect  
+
+Listar rotas: `netstat -nr -f inet`  
 Conecta na VPN (rota defult para utun4 terá prioridade)  
 Remov. rota padrão ETH0: `sudo route delete default -interface en0`  
 Adici. rota padrão ETH0: `sudo route add default -interface en0`  
