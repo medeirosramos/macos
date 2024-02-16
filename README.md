@@ -125,3 +125,23 @@ opcos para análise:
 `sudo route add 10.1.2.0 -netmask 255.255.255.0 -gateway 192.168.60.55`  
 `sudo route add 10.1.3.0 -gateway 192.168.60.55`  
 `sudo route add 10.1.4.0 -netmask 255.255.255.0  -gateway 192.168.60.55`  
+
+# Captura de Tela
+Comando para ler valores:
+`defaults read com.apple.screencapture`  
+Também é possivel acessar o arquivo de preferências: ~/Library/Preferences/com.apple.screencapture.plist  
+
+Comando para configuração padrão:  
+`defaults write com.apple.screencapture name "Captura de Tela"`  
+`defaults write com.apple.screencapture "include-date" 1`  
+`defaults write com.apple.screencapture type PNG`  
+
+Comando para redefinir padrão SEM DATA:  
+`defaults write com.apple.screencapture name "Captura de Tela"`  
+`defaults write com.apple.screencapture "include-date" 0`  
+`defaults write com.apple.screencapture type JPG` outros formatos possíveis: gif, pdf, tiff  
+Não encontrei uma forma de remover os espaços e acento do modelo padrão "Captura de Tela yyyy-MM-dd às hh.mm.ss"
+
+links de ref.:  
+https://www.vpsbasics.com/software/how-to-change-default-screenshot-file-format-to-jpg-and-other-formats-with-macos/  
+https://www.reddit.com/r/MacOS/comments/11jgajw/how_to_change_the_comapplescreencapture_name_to/?rdt=53048  
