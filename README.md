@@ -76,21 +76,29 @@ diskutil unmountDisk /dev/disk3
 
 sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/disk3 bs=1m
 
-# HomeBrew https://brew.sh/
+# JAVA
+[alternatives](https://medium.com/@devkosal/switching-java-jdk-versions-on-macos-80bc868e686a)
+```
+/usr/libexec/java_home -V
+
+```
+
+### HomeBrew https://brew.sh/
 
 Exemplo de uso: brew install pdftk-java
 
-# ireport MacOS
+### ireport MacOS
 ./Downloads/iReport-5.6.0/bin/ireport
+
+### Executar .exe feito em Java no MacOS
+
+"/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
+
 
 # DEV in MacOS (Appache/PHP/VisualStudioCode)
 https://getgrav.org/blog/macos-monterey-apache-multiple-php-versions
 
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
-
-# Executar .exe feito em Java no MacOS
-
-"/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
 
 # SVN Client MacOS
 
