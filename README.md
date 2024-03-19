@@ -1,6 +1,6 @@
-# Ajustes MacOS by medeirosramos
+## Ajustes MacOS by medeirosramos
 
-## karabiner-macos
+### karabiner-macos
 
 Software para MacOS https://karabiner-elements.pqrs.org/
 
@@ -11,7 +11,7 @@ link para importacao:
 
 abra em seu navegador o link: *karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json*
 
-## hist
+#### hist
 editar o arquivo /etc/zshrc de:
 
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history  
@@ -27,17 +27,19 @@ alias hist="history 1"
 alias servidores=/Users/rodrigo/github/macos/sshServidores.sh  
 alias ireport=/Users/rodrigo/Downloads/iReport-5.6.0/bin/ireport  
 
-## ssh-keygen
+### ssh-keygen
 commando linux:
-`ssh-keygen -t rsa -b 4096`
+```
+ssh-keygen -t rsa -b 4096
+```
 
-## ssh-copy-id
-
+### ssh-copy-id
+```
 ssh-copy-id -i .ssh/id_rsa.pub user@servidor.com.br
+```
 
-
-## multipass
-
+### multipass
+```
 multipass launch --name ubuntu16 16.04
 Launched: ubuntu16                                                              
 Mounted '/Users/rodrigo' into 'ubuntu16:Home'  
@@ -63,20 +65,27 @@ multipass list
 multipass purge  
 multipass list  
 multipass get client.primary-name
+```
+### Gerar HASH arquivo
+```
+shasum -a 256 exemplo.txt
+# 45f873de9f8cb637345d6e66a583762730bbea30277ef7b32c9c3bd6700a32b2 exemplo.txt
+echo "45f873de9f8cb637345d6e66a583762730bbea30277ef7b32c9c3bd6700a32b2 exemplo.txt" | shasum -a 256 --check
+```
 
-# Converter imagem .DMG em .ISO
-
+### Converter imagem .DMG em .ISO
+```
 hdiutil convert origem.dmg -format UDTO -o destino.iso
-
-# Gravar ISO PenDrive
-
+```
+### Gravar ISO PenDrive
+```
 diskutil list
 
 diskutil unmountDisk /dev/disk3
 
 sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/disk3 bs=1m
-
-# JAVA
+```
+## JAVA
 [alternatives](https://medium.com/@devkosal/switching-java-jdk-versions-on-macos-80bc868e686a)
 ```
 /usr/libexec/java_home -V
@@ -95,18 +104,18 @@ Exemplo de uso: brew install pdftk-java
 "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
 
 
-# DEV in MacOS (Appache/PHP/VisualStudioCode)
+## DEV in MacOS (Appache/PHP/VisualStudioCode)
 https://getgrav.org/blog/macos-monterey-apache-multiple-php-versions
 
 alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 
-# SVN Client MacOS
+## SVN Client MacOS
 
 https://subversion.apache.org/packages.html#osx
 brew options subversion  
 brew install subversion  
 
-# Job Log para impressora Ricoh  
+### Job Log para impressora Ricoh  
 https://discussions.apple.com/thread/8658692  
 Terminal: `sudo cupsctl WebInterface=yes`  
 Browser: http://127.0.0.1:631/printers/yourprinter  
@@ -118,7 +127,7 @@ Button Set Default Options
 Terminal: `sudo cupsctl WebInterface=no`  
 Restart Print System or Reboot.  
 
-# GlobalProtect  
+### GlobalProtect  
 
 Listar rotas: `netstat -nr -f inet`  
 Conecta na VPN (rota defult para utun4 terá prioridade)  
@@ -134,7 +143,7 @@ opcos para análise:
 `sudo route add 10.1.3.0 -gateway 192.168.60.55`  
 `sudo route add 10.1.4.0 -netmask 255.255.255.0  -gateway 192.168.60.55`  
 
-# Captura de Tela
+### Captura de Tela
 Comando para ler valores:
 `defaults read com.apple.screencapture`  
 Também é possivel acessar o arquivo de preferências: ~/Library/Preferences/com.apple.screencapture.plist  
