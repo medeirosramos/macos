@@ -85,11 +85,15 @@ diskutil unmountDisk /dev/disk3
 
 sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/disk3 bs=1m
 ```
-## JAVA
+### JAVA
 [alternatives](https://medium.com/@devkosal/switching-java-jdk-versions-on-macos-80bc868e686a)
 ```
 /usr/libexec/java_home -V
 
+```
+##### Maven
+```
+export PATH=/Users/rodrigo/Projetos/JAVA/apache-maven-3.9.6/bin:$PATH
 ```
 
 ### HomeBrew https://brew.sh/
