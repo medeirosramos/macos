@@ -90,6 +90,8 @@ sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/dis
 ```
 /usr/libexec/java_home -V
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_381`
+
 ```
 ##### Maven
 ```
