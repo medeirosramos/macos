@@ -94,6 +94,7 @@ sudo dd if=/Users/rodrigo/Downloads/OracleLinux-R8-U3-x86_64-dvd.iso of=/dev/dis
 ##### Maven
 ```
 export PATH=/Users/rodrigo/Projetos/JAVA/apache-maven-3.9.6/bin:$PATH
+export PATH=/Users/rodrigo/Projetos/JAVA/apache-maven-3.2.5/bin:$PATH
 ```
 
 ### HomeBrew https://brew.sh/
