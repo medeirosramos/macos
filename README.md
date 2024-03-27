@@ -169,3 +169,10 @@ Não encontrei uma forma de remover os espaços e acento do modelo padrão "Capt
 links de ref.:  
 https://www.vpsbasics.com/software/how-to-change-default-screenshot-file-format-to-jpg-and-other-formats-with-macos/  
 https://www.reddit.com/r/MacOS/comments/11jgajw/how_to_change_the_comapplescreencapture_name_to/?rdt=53048  
+
+### Office365
+
+[Erro de ativação do Microsoft 365 Apps: "Outra conta de sua organização já está conectada neste computador"](https://learn.microsoft.com/pt-br/office/troubleshoot/activation/another-account-already-signed-in)
+```
+defaults write com.microsoft.Word ResetOneAuthCreds -bool YES
+```
