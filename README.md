@@ -166,6 +166,10 @@ Comando para redefinir padrão SEM DATA:
 `defaults write com.apple.screencapture type JPG` outros formatos possíveis: gif, pdf, tiff  
 Não encontrei uma forma de remover os espaços e acento do modelo padrão "Captura de Tela yyyy-MM-dd às hh.mm.ss"
 
+Comando para definir local de salvamento:  
+`defaults write com.apple.screencapture location "~/Desktop/Capturas de Tela"`  
+Ou acessar as opções de captura de tela através da opção: "Shift, Command, e 5" -> "Salvar em:"  
+
 links de ref.:  
 https://www.vpsbasics.com/software/how-to-change-default-screenshot-file-format-to-jpg-and-other-formats-with-macos/  
 https://www.reddit.com/r/MacOS/comments/11jgajw/how_to_change_the_comapplescreencapture_name_to/?rdt=53048  
