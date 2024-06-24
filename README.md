@@ -101,6 +101,8 @@ export PATH=/Users/rodrigo/Projetos/JAVA/apache-maven-3.2.5/bin:$PATH
 
 ### HomeBrew https://brew.sh/
 
+Listar: `brew list` ou `brew list --cask`
+
 Exemplo de uso: brew install pdftk-java
 
 ### ireport MacOS
