@@ -110,7 +110,7 @@ Exemplo de uso: brew install pdftk-java
 
 ### Executar .exe feito em Java no MacOS
 
-"/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/Downloads/Assinador_CPA.exe
+"/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java" -jar /Users/rodrigo/TJCE/Software/Assinador_CPA.exe
 
 
 ## DEV in MacOS (Appache/PHP/VisualStudioCode)
