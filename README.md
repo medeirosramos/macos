@@ -1,15 +1,32 @@
 ## Ajustes MacOS by medeirosramos
 
-### karabiner-macos
+~### karabiner-macos~
 
-Software para MacOS https://karabiner-elements.pqrs.org/
+~Software para MacOS https://karabiner-elements.pqrs.org/~
 
-Minha customizacao para as teclas Home e End nos Apps: Terminal/Notes
+~Minha customizacao para as teclas Home e End nos Apps: Terminal/Notes~
 
-link para importacao: 
-[Home/End](http://karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json)
+~link para importacao: ~
+~[Home/End](http://karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json)~
 
-abra em seu navegador o link: *karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json*
+~abra em seu navegador o link: *karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/medeirosramos/karabiner-macos/master/Home-End.json*~
+
+#### Teclado: home e end
+
+Fonte: https://ricardo-reis.medium.com/faça-as-teclas-home-e-end-se-comportarem-no-mac-os-como-funcionam-no-windows-e159b4849340
+sudo nano ~/Library/KeyBindings/DefaultKeyBinding.dict
+```
+{   
+   "\UF729"  = moveToBeginningOfParagraph:; // home   
+   "\UF72B"  = moveToEndOfParagraph:; // end   
+   "$\UF729" = moveToBeginningOfParagraphAndModifySelection:; // shift-home   
+   "$\UF72B" = moveToEndOfParagraphAndModifySelection:; // shift-end
+   "^\UF729" = moveToBeginningOfDocument:; // ctrl-home   
+   "^\UF72B" = moveToEndOfDocument:; // ctrl-end   
+   "^$\UF729" = moveToBeginningOfDocumentAndModifySelection:; // ctrl-shift-home   
+   "^$\UF72B" = moveToEndOfDocumentAndModifySelection:; // ctrl-shift-end 
+}
+```
 
 #### hist
 editar o arquivo /etc/zshrc de:
